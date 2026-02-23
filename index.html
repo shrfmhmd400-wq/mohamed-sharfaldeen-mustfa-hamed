@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Sharaf – Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Mohamed<span>.dev</span></div>
+      <button id="hamburger">&#9776;</button>
+      <ul id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#calculator">GPA</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <a href="https://github.com/notifications" target="_blank" class="btn">
+    GitHub
+  </a>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO: image LEFT, text RIGHT -->
+  <section class="hero" id="home">
+    <div class="hero-image">
+      <img
+        src="image/profile.png"
+        alt="Mohamed Sharaf"
+        onerror="this.src='https://placehold.co/220x260/2d3748/f6ad55?text=MS'"
+      />
+    </div>
+    <div class="hero-text">
+      <p class="small-label">Hello, I am</p>
+      <h1>Mohamed Sharaf</h1>
+      <h2>Frontend Developer</h2>
+      <p>Year II Computer Science student at INES-Ruhengeri building clean, responsive websites.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section bg-light" id="about">
+    <div class="container">
+      <h2 class="title">About Me</h2>
+      <p>My name is <strong>Mohamed Sharaf</strong>. I am a Computer Science student at <strong>INES-Ruhengeri</strong>, Rwanda, currently in <strong>Year II – FEB Day Program (2025–2026)</strong>. My goal is to become a skilled frontend developer who builds useful digital solutions for Rwandan communities.</p>
+      <br/>
+      <h3>My Skills</h3>
+      <div class="skills-row">
+        <span class="skill">HTML5</span>
+        <span class="skill">CSS3</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">GitHub</span>
+        <span class="skill">Flexbox</span>
+        <span class="skill">Responsive Design</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="title">Projects</h2>
+      <div class="cards">
+
+        <div class="card">
+          <img src="image/project1.jpg" alt="Grade Tracker"
+               onerror="this.src='https://placehold.co/360x170/2d3748/f6ad55?text=Grade+Tracker'" />
+          <div class="card-body">
+            <h3>Student Grade Tracker</h3>
+            <p><strong>Problem:</strong> Students had no easy way to track marks and calculate their GPA each semester.</p>
+            <p class="tech">HTML · CSS · JavaScript</p>
+            <a href="https://github.com/mohamed-sharaf/grade-tracker" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/project2.jpg" alt="Events Board"
+               onerror="this.src='https://placehold.co/360x170/44337a/f6ad55?text=Events+Board'" />
+          <div class="card-body">
+            <h3>Musanze Events Board</h3>
+            <p><strong>Problem:</strong> Local events in Musanze had no online listing, so residents missed activities.</p>
+            <p class="tech">HTML · CSS Flexbox · JavaScript</p>
+            <a href="https://github.com/mohamed-sharaf/events-board" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/project3.jpg" alt="Budget Planner"
+               onerror="this.src='https://placehold.co/360x170/1a365d/f6ad55?text=Budget+Planner'" />
+          <div class="card-body">
+            <h3>Budget Planner</h3>
+            <p><strong>Problem:</strong> Students had no simple tool to track monthly income and expenses in real time.</p>
+            <p class="tech">HTML · CSS · JavaScript</p>
+            <a href="https://github.com/mohamed-sharaf/budget-planner" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GPA CALCULATOR -->
+  <section class="section bg-light" id="calculator">
+    <div class="container">
+      <h2 class="title">GPA Calculator</h2>
+      <p>Enter your marks out of 100 for three courses.</p><br/>
+      <div class="calc-box">
+        <div class="calc-inputs">
+          <div class="field">
+            <label for="mark1">Course 1 Mark</label>
+            <input type="number" id="mark1" placeholder="e.g. 75" min="0" max="100" />
+            <span class="err" id="err1"></span>
+          </div>
+          <div class="field">
+            <label for="mark2">Course 2 Mark</label>
+            <input type="number" id="mark2" placeholder="e.g. 80" min="0" max="100" />
+            <span class="err" id="err2"></span>
+          </div>
+          <div class="field">
+            <label for="mark3">Course 3 Mark</label>
+            <input type="number" id="mark3" placeholder="e.g. 68" min="0" max="100" />
+            <span class="err" id="err3"></span>
+          </div>
+          <button class="btn" id="calcBtn">Calculate GPA</button>
+        </div>
+        <div class="calc-result" id="calcResult">
+          <p>Result will appear here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV -->
+  <section class="section" id="cv">
+    <div class="container">
+      <h2 class="title">My CV</h2>
+      <div class="cv-box">
+        <div class="cv-preview">
+          <h3>Mohamed Sharaf</h3>
+          <p><em>Frontend Developer | Year II Computer Science – INES-Ruhengeri</em></p>
+          <hr/>
+          <h4>Education</h4>
+          <p>BSc Computer Science – INES-Ruhengeri, Rwanda (2024–2027) · Year II FEB Day</p>
+          <h4>Skills</h4>
+          <p>HTML5 · CSS3 · JavaScript · GitHub · Responsive Design</p>
+          <h4>Projects</h4>
+          <ul>
+            <li>Student Grade Tracker</li>
+            <li>Musanze Events Board</li>
+            <li>Personal Budget Planner</li>
+          </ul>
+          <h4>Languages</h4>
+          <p>Arabic (Native) · English (Fluent) · Kinyarwanda (Basic)</p>
+        </div>
+        <a href="cv/mohamed-sharaf-cv.pdf" download class="btn">&#11015; Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section bg-light" id="contact">
+    <div class="container">
+      <h2 class="title">Contact Me</h2>
+      <div class="contact-box">
+        <div class="contact-info">
+          <p>📧 <a href="mailto:mohamed.sharaf@student.ines.ac.rw">mohamed.sharaf@student.ines.ac.rw</a></p>
+          <p>📞 <a href="tel:+250788000001">+250 788 000 001</a></p>
+          <p>🐙 <a href="https://github.com/mohamed-sharaf" target="_blank">github.com/mohamed-sharaf</a></p>
+          <p>💼 <a href="https://linkedin.com/in/mohamed-sharaf" target="_blank">linkedin.com/in/mohamed-sharaf</a></p>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <div class="field">
+            <label for="cName">Your Name</label>
+            <input type="text" id="cName" placeholder="Full name" />
+            <span class="err" id="errName"></span>
+          </div>
+          <div class="field">
+            <label for="cEmail">Your Email</label>
+            <input type="email" id="cEmail" placeholder="you@example.com" />
+            <span class="err" id="errEmail"></span>
+          </div>
+          <div class="field">
+            <label for="cMsg">Message</label>
+            <textarea id="cMsg" rows="4" placeholder="Write your message..."></textarea>
+            <span class="err" id="errMsg"></span>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+          <p class="success" id="formSuccess"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&#169; <span id="year"></span> Mohamed Sharaf &nbsp;|&nbsp; INES-Ruhengeri &nbsp;|&nbsp; Computer Science Year II</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
